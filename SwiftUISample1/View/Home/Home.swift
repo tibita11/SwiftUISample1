@@ -10,25 +10,39 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         NavigationView {
-            VStack {
-                NumberOfSteps()
-                    .padding()
-                    .frame(height: 300)
+            ZStack(alignment: .top) {
+                Rectangle()
+                    .fill(Color("Yellow"))
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(height: 150)
                 
-                Spacer()
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        // MEMO: お知らせ画面への遷移
-                    } label: {
-                        Label("menu", systemImage: "bell")
-                            .foregroundColor(.black)
-                            .scaleEffect(1.2)
+                ScrollView {
+                    VStack(spacing: 20) {
+                        NumberOfSteps()
+                            .padding(.horizontal, 20)
+                            .frame(height: 200)
+                        
+                        BodyWeight()
+                            .padding(.horizontal, 20)
+                            .frame(height: 200)
+                        
+                        Spacer()
+                    }
+                    .padding(.top, 10)
+                }
+                .toolbarBackground(Color("Yellow"),for: .navigationBar)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            // MEMO: お知らせ画面への遷移
+                        } label: {
+                            Label("menu", systemImage: "bell")
+                                .foregroundColor(.black)
+                                .scaleEffect(1.2)
+                        }
                     }
                 }
             }
-            .padding(.top, 10)
         }
     }
 }
