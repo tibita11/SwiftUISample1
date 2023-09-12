@@ -9,11 +9,11 @@ import SwiftUI
 
 // MEMO: CaseIterableを使用してallCasesを使用している
 enum Tab: String, CaseIterable {
-    case home = "Home"
-    case record = "Record"
-    case certificate = "Certificate"
-    case challenge = "Challenge"
-    case menu = "Menu"
+    case home = "ホーム"
+    case record = "記録する"
+    case certificate = "入館証"
+    case challenge = "チャレンジ"
+    case menu = "メニュー"
     
     // MEMO: selfによって画像を返す
     var systemImage: String {

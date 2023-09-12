@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct MainTab: View {
     @State private var activeTab: Tab = .home
     // MEMO: 座標計算をせずに、Viewを次の場所へと動かす
     @Namespace private var animation
@@ -20,7 +20,7 @@ struct Home: View {
     var body: some View {
         VStack {
             TabView(selection: $activeTab) {
-                Text("Home")
+                Home()
                     .tag(Tab.home)
                 
                 Text("Record")
@@ -141,7 +141,7 @@ struct TabItem: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct MainTab_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

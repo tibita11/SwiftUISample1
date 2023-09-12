@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       Home()
+        MainTab()
             // MEMO: 明示的に明るい色に設定する
             .preferredColorScheme(.light)
     }
