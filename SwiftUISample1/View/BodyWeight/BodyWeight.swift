@@ -28,6 +28,8 @@ struct BodyWeight: View {
                 Spacer()
             }
             
+            BodyWeightBarMark()
+            
             Spacer()
         }
         .padding()

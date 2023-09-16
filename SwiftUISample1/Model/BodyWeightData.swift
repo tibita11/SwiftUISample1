@@ -1,31 +1,30 @@
 //
-//  StepsData.swift
+//  BodyWeightData.swift
 //  SwiftUISample1
 //
-//  Created by 鈴木楓香 on 2023/09/13.
+//  Created by 鈴木楓香 on 2023/09/16.
 //
 
 import Foundation
-import Charts
 
-// MEMO: 歩数データを取得して配列で返す
-struct StepsData: Identifiable {
+// MEMO: 体重データを取得して配列で返す
+struct BodyWeightData: Identifiable {
     let id = UUID()
     let date: Date
-    let steps: Int
+    let bodyWight: Double
     var animate: Bool = false
 }
 
 // MEMO: テスト用のデータ
-var stepsTestData: [StepsData] = {
+var bodyWeightTestData: [BodyWeightData] = {
     let calendar = Calendar.current
     let date = Date()
-    var data: [StepsData] = []
+    var data: [BodyWeightData] = []
     for num in 0...13 {
         print(calendar.date(byAdding: .day, value: -num, to: date)!)
-        data.append(StepsData(
+        data.append(BodyWeightData(
             date: calendar.date(byAdding: .day, value: -num, to: date)!,
-            steps: num%2 == 0 ? 1000 : 5000)
+            bodyWight: num%2 == 0 ? 50.6 : 45.8)
         )
     }
     return data
