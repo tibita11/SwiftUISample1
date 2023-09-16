@@ -19,16 +19,13 @@ struct Home: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         NumberOfSteps()
-                            .padding(.horizontal, 20)
-                            .frame(height: 200)
                         
                         BodyWeight()
-                            .padding(.horizontal, 20)
-                            .frame(height: 200)
                         
                         Spacer()
                     }
                     .padding(.top, 10)
+                    .padding(.horizontal, 20)
                 }
                 .toolbarBackground(Color("Yellow"),for: .navigationBar)
                 .toolbar {

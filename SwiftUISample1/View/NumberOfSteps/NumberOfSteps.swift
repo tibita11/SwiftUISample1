@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NumberOfSteps: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(spacing: 5) {
             HStack(alignment: .center) {
                 Spacer()
                 
@@ -41,6 +41,8 @@ struct NumberOfSteps: View {
                         .font(.caption)
                 }
             }
+            
+            StepsBarMark()
             
             Spacer()
         }
