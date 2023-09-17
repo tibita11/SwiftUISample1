@@ -13,6 +13,7 @@
 		A5104D212AB049470018E924 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5104D202AB049470018E924 /* TabPosition.swift */; };
 		A5104D252AB05D350018E924 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5104D242AB05D350018E924 /* Home.swift */; };
 		A5104D282AB063000018E924 /* NumberOfSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5104D272AB063000018E924 /* NumberOfSteps.swift */; };
+		A514926D2AB6C1A700D4C4FE /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514926C2AB6C1A700D4C4FE /* NotificationList.swift */; };
 		A533DD8A2AB1469400A9667D /* StepsBarMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533DD892AB1469400A9667D /* StepsBarMark.swift */; };
 		A533DD8C2AB147E400A9667D /* StepsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533DD8B2AB147E400A9667D /* StepsData.swift */; };
 		A53BAF232AAFFD3A00DC2DB0 /* SwiftUISample1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BAF222AAFFD3A00DC2DB0 /* SwiftUISample1App.swift */; };
@@ -34,6 +35,7 @@
 		A5104D202AB049470018E924 /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		A5104D242AB05D350018E924 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A5104D272AB063000018E924 /* NumberOfSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSteps.swift; sourceTree = "<group>"; };
+		A514926C2AB6C1A700D4C4FE /* NotificationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
 		A533DD892AB1469400A9667D /* StepsBarMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsBarMark.swift; sourceTree = "<group>"; };
 		A533DD8B2AB147E400A9667D /* StepsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsData.swift; sourceTree = "<group>"; };
 		A53BAF1F2AAFFD3A00DC2DB0 /* SwiftUISample1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISample1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,14 @@
 				A533DD892AB1469400A9667D /* StepsBarMark.swift */,
 			);
 			path = NumberOfSteps;
+			sourceTree = "<group>";
+		};
+		A514926B2AB6C14900D4C4FE /* NotificationList */ = {
+			isa = PBXGroup;
+			children = (
+				A514926C2AB6C1A700D4C4FE /* NotificationList.swift */,
+			);
+			path = NotificationList;
 			sourceTree = "<group>";
 		};
 		A53BAF162AAFFD3A00DC2DB0 = {
@@ -142,6 +152,7 @@
 				A5104D262AB062E40018E924 /* NumberOfSteps */,
 				A556ADFD2AB092D900A63D05 /* BodyWeight */,
 				A567FC7D2AB6966300F9D878 /* FunctionList */,
+				A514926B2AB6C14900D4C4FE /* NotificationList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,6 +249,7 @@
 				A53BAF252AAFFD3A00DC2DB0 /* ContentView.swift in Sources */,
 				A5087C1D2AB5F79500AFB6D5 /* BodyWeightBarMark.swift in Sources */,
 				A567FC7F2AB6972200F9D878 /* FunctionList.swift in Sources */,
+				A514926D2AB6C1A700D4C4FE /* NotificationList.swift in Sources */,
 				A533DD8A2AB1469400A9667D /* StepsBarMark.swift in Sources */,
 				A5104D212AB049470018E924 /* TabPosition.swift in Sources */,
 				A5104D282AB063000018E924 /* NumberOfSteps.swift in Sources */,

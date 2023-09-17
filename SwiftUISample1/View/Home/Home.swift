@@ -28,6 +28,8 @@ struct Home: View {
                     .padding(.horizontal, 20)
                     
                     FunctionList()
+                    
+                    NotificationList()
 
                 }
                 .toolbarBackground(Color("Yellow"),for: .navigationBar)
