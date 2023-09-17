@@ -33,7 +33,7 @@ struct BodyWeightBarMark: View {
                         .foregroundColor(Color("Gray"))
                 }
         }
-        .frame(height: 100)
+        .frame(height: 70)
         .padding()
         .chartXAxis(.hidden)
         .chartYAxis(.hidden)

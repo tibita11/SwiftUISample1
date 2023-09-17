@@ -42,7 +42,7 @@ struct StepsBarMark: View {
                         .foregroundColor(Color("Gray"))
                 }
         }
-        .frame(height: 100)
+        .frame(height: 70)
         .padding()
         .chartYAxis(.hidden)
         .chartXAxis {

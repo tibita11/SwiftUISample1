@@ -22,7 +22,6 @@ var stepsTestData: [StepsData] = {
     let date = Date()
     var data: [StepsData] = []
     for num in 0...13 {
-        print(calendar.date(byAdding: .day, value: -num, to: date)!)
         data.append(StepsData(
             date: calendar.date(byAdding: .day, value: -num, to: date)!,
             steps: num%2 == 0 ? 1000 : 5000)

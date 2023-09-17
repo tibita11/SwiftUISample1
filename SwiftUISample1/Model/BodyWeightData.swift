@@ -21,7 +21,6 @@ var bodyWeightTestData: [BodyWeightData] = {
     let date = Date()
     var data: [BodyWeightData] = []
     for num in 0...13 {
-        print(calendar.date(byAdding: .day, value: -num, to: date)!)
         data.append(BodyWeightData(
             date: calendar.date(byAdding: .day, value: -num, to: date)!,
             bodyWight: num%2 == 0 ? 50.6 : 45.8)

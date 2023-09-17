@@ -22,6 +22,7 @@
 		A53BAF332AAFFF4100DC2DB0 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BAF322AAFFF4100DC2DB0 /* Tab.swift */; };
 		A53BAF352AB0032100DC2DB0 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BAF342AB0032100DC2DB0 /* MainTab.swift */; };
 		A556ADFF2AB0930400A63D05 /* BodyWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556ADFE2AB0930400A63D05 /* BodyWeight.swift */; };
+		A567FC7F2AB6972200F9D878 /* FunctionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567FC7E2AB6972200F9D878 /* FunctionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A53BAF322AAFFF4100DC2DB0 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		A53BAF342AB0032100DC2DB0 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		A556ADFE2AB0930400A63D05 /* BodyWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeight.swift; sourceTree = "<group>"; };
+		A567FC7E2AB6972200F9D878 /* FunctionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				A5104D232AB05CCE0018E924 /* Home */,
 				A5104D262AB062E40018E924 /* NumberOfSteps */,
 				A556ADFD2AB092D900A63D05 /* BodyWeight */,
+				A567FC7D2AB6966300F9D878 /* FunctionList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +151,14 @@
 				A5087C1C2AB5F79500AFB6D5 /* BodyWeightBarMark.swift */,
 			);
 			path = BodyWeight;
+			sourceTree = "<group>";
+		};
+		A567FC7D2AB6966300F9D878 /* FunctionList */ = {
+			isa = PBXGroup;
+			children = (
+				A567FC7E2AB6972200F9D878 /* FunctionList.swift */,
+			);
+			path = FunctionList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				A53BAF332AAFFF4100DC2DB0 /* Tab.swift in Sources */,
 				A53BAF252AAFFD3A00DC2DB0 /* ContentView.swift in Sources */,
 				A5087C1D2AB5F79500AFB6D5 /* BodyWeightBarMark.swift in Sources */,
+				A567FC7F2AB6972200F9D878 /* FunctionList.swift in Sources */,
 				A533DD8A2AB1469400A9667D /* StepsBarMark.swift in Sources */,
 				A5104D212AB049470018E924 /* TabPosition.swift in Sources */,
 				A5104D282AB063000018E924 /* NumberOfSteps.swift in Sources */,
