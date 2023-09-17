@@ -23,7 +23,11 @@ struct FunctionList: View {
     var body: some View {
         LazyVGrid(columns: grids, spacing: 20) {
             ForEach(0..<functions.count, id: \.self) { num in
-                FunctionItem(imageName: functions[num].imageName, text: functions[num].text)
+                NavigationLink {
+                    Admission(title: functions[num].text)
+                } label: {
+                    FunctionItem(imageName: functions[num].imageName, text: functions[num].text)
+                }
             }
         }
         .padding()
@@ -42,6 +46,7 @@ struct FunctionItem: View {
             
             Text(text)
                 .font(.caption)
+                .foregroundColor(.black)
         }
     }
 }
