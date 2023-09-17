@@ -23,7 +23,7 @@ struct MainTab: View {
                 Home()
                     .tag(Tab.home)
                 
-                Text("Record")
+                Record()
                     .tag(Tab.record)
                 
                 Text("Certificate")
