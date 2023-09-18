@@ -14,42 +14,51 @@ struct BodyRecord: View {
                 ZStack {
                     Rectangle()
                         .foregroundColor(Color("Yellow"))
-                        .frame(width: .infinity, height: 100)
+                        .frame(height: 130)
                     
                     HStack(spacing: 20) {
                         Group {
-                            Button {
-                                //MEMO: 体重記録画面に遷移
-                                
-                            } label: {
-                                VStack {
-                                    Image(systemName: "scalemass")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
+                            HStack {
+                                Spacer()
+                                Button {
+                                    //MEMO: 体重記録画面に遷移
                                     
-                                    Text("体重を記録する")
-                                        .font(.caption2)
+                                } label: {
+                                    VStack(spacing: 10) {
+                                        Image(systemName: "scalemass")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                        
+                                        Text("体重を記録する")
+                                            .font(.caption)
+                                    }
                                 }
+                                Spacer()
                             }
                             
-                            Button {
-                                //MEMO: 体重記録画面に遷移
-                                
-                            } label: {
-                                VStack {
-                                    Image(systemName: "applewatch.watchface")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
+                            HStack {
+                                Spacer()
+                                Button {
+                                    //MEMO: 体重記録画面に遷移
                                     
-                                    Text("体重を記録する")
-                                        .font(.caption2)
+                                } label: {
+                                    VStack(spacing: 10) {
+                                        Image(systemName: "applewatch.watchface")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                        
+                                        Text("体重を記録する")
+                                            .font(.caption)
+                                    }
                                 }
-                           }
+                                Spacer()
+                            }
                         }
                         .padding(5)
                         .background(.white)
                         .foregroundColor(.black)
-                        .frame(width: 150, height: 70)
+                        .frame(width: 150, height: 90)
+                        .cornerRadius(8)
                     }
                 }
                 
