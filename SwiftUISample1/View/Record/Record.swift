@@ -58,8 +58,8 @@ struct Record: View {
                 VStack(alignment: .leading, spacing: 20) {
                     Text("カラダの記録")
                     
-                    Button {
-                        // MEMO: 記録画面へ遷移
+                    NavigationLink {
+                        BodyRecord()
                     } label: {
                         Text("記録する")
                             .foregroundColor(.white)
