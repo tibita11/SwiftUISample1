@@ -59,7 +59,7 @@ struct Record: View {
                     Text("カラダの記録")
                     
                     NavigationLink {
-                        BodyRecord()
+                        BodyRecord(currentDate: selectedDate)
                     } label: {
                         Text("記録する")
                             .foregroundColor(.white)

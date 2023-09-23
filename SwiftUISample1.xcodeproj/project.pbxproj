@@ -28,6 +28,9 @@
 		A567FC812AB6ABAE00F9D878 /* Admission.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567FC802AB6ABAE00F9D878 /* Admission.swift */; };
 		A592ED962AB6E9EA009D7814 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592ED952AB6E9EA009D7814 /* Record.swift */; };
 		A592ED982AB6F704009D7814 /* RecordCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A592ED972AB6F704009D7814 /* RecordCalendarView.swift */; };
+		A5F917E12ABEBA5E00DAAB42 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F917E02ABEBA5E00DAAB42 /* Date+Extension.swift */; };
+		A5F917E32ABEC9BE00DAAB42 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F917E22ABEC9BE00DAAB42 /* View+Extension.swift */; };
+		A5F917E52ABEE38200DAAB42 /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F917E42ABEE38200DAAB42 /* OffsetKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		A567FC802AB6ABAE00F9D878 /* Admission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admission.swift; sourceTree = "<group>"; };
 		A592ED952AB6E9EA009D7814 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		A592ED972AB6F704009D7814 /* RecordCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCalendarView.swift; sourceTree = "<group>"; };
+		A5F917E02ABEBA5E00DAAB42 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		A5F917E22ABEC9BE00DAAB42 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		A5F917E42ABEE38200DAAB42 /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			children = (
 				A5087C1B2AB5A85100AFB6D5 /* Info.plist */,
 				A53BAF312AAFFF3200DC2DB0 /* View */,
+				A5F917DF2ABEBA3000DAAB42 /* Helpers */,
 				A53BAF302AAFFF2000DC2DB0 /* Model */,
 				A53BAF222AAFFD3A00DC2DB0 /* SwiftUISample1App.swift */,
 				A53BAF242AAFFD3A00DC2DB0 /* ContentView.swift */,
@@ -190,6 +197,16 @@
 				A531E9052AB891830055D24A /* BodyRecord.swift */,
 			);
 			path = Record;
+			sourceTree = "<group>";
+		};
+		A5F917DF2ABEBA3000DAAB42 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A5F917E02ABEBA5E00DAAB42 /* Date+Extension.swift */,
+				A5F917E22ABEC9BE00DAAB42 /* View+Extension.swift */,
+				A5F917E42ABEE38200DAAB42 /* OffsetKey.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +284,7 @@
 				A53BAF252AAFFD3A00DC2DB0 /* ContentView.swift in Sources */,
 				A5087C1D2AB5F79500AFB6D5 /* BodyWeightBarMark.swift in Sources */,
 				A567FC7F2AB6972200F9D878 /* FunctionList.swift in Sources */,
+				A5F917E12ABEBA5E00DAAB42 /* Date+Extension.swift in Sources */,
 				A514926D2AB6C1A700D4C4FE /* NotificationList.swift in Sources */,
 				A533DD8A2AB1469400A9667D /* StepsBarMark.swift in Sources */,
 				A5104D212AB049470018E924 /* TabPosition.swift in Sources */,
@@ -280,6 +298,8 @@
 				A533DD8C2AB147E400A9667D /* StepsData.swift in Sources */,
 				A592ED962AB6E9EA009D7814 /* Record.swift in Sources */,
 				A531E9062AB891830055D24A /* BodyRecord.swift in Sources */,
+				A5F917E32ABEC9BE00DAAB42 /* View+Extension.swift in Sources */,
+				A5F917E52ABEE38200DAAB42 /* OffsetKey.swift in Sources */,
 				A567FC812AB6ABAE00F9D878 /* Admission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
