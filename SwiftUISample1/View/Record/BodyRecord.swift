@@ -15,78 +15,75 @@ struct BodyRecord: View {
     @State private var crreateWeek: Bool = false
     
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading, spacing: 30) {
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(Color("Yellow"))
-                        .frame(height: 130)
-                    
-                    HStack(spacing: 20) {
-                        Group {
-                            HStack {
-                                Spacer()
-                                Button {
-                                    //MEMO: 体重記録画面に遷移
+        VStack(alignment: .leading, spacing: 30) {
+            ZStack {
+                Rectangle()
+                    .foregroundColor(Color("Yellow"))
+                    .frame(height: 130)
+                
+                HStack(spacing: 20) {
+                    Group {
+                        HStack {
+                            Spacer()
+                            NavigationLink {
+                                BodyWeightRecord()
+                            } label: {
+                                VStack(spacing: 10) {
+                                    Image(systemName: "scalemass")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
                                     
-                                } label: {
-                                    VStack(spacing: 10) {
-                                        Image(systemName: "scalemass")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                        
-                                        Text("体重を記録する")
-                                            .font(.caption)
-                                    }
+                                    Text("体重を記録する")
+                                        .font(.caption)
                                 }
-                                Spacer()
                             }
-                            
-                            HStack {
-                                Spacer()
-                                Button {
-                                    //MEMO: 体重記録画面に遷移
-                                    
-                                } label: {
-                                    VStack(spacing: 10) {
-                                        Image(systemName: "applewatch.watchface")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                        
-                                        Text("体重を記録する")
-                                            .font(.caption)
-                                    }
-                                }
-                                Spacer()
-                            }
+                            Spacer()
                         }
-                        .padding(5)
-                        .background(.white)
-                        .foregroundColor(.black)
-                        .frame(width: 150, height: 90)
-                        .cornerRadius(8)
+                        
+                        HStack {
+                            Spacer()
+                            Button {
+                                //MEMO: 体重記録画面に遷移
+                                
+                            } label: {
+                                VStack(spacing: 10) {
+                                    Image(systemName: "applewatch.watchface")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    
+                                    Text("血圧を記録する")
+                                        .font(.caption)
+                                }
+                            }
+                            Spacer()
+                        }
                     }
+                    .padding(5)
+                    .background(.white)
+                    .foregroundColor(.black)
+                    .frame(width: 150, height: 90)
+                    .cornerRadius(8)
+                }
+            }
+            
+            CurrendarView()
+            
+            Spacer()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("カラダ記録")
+        .onAppear {
+            if weakSlider.isEmpty {
+                let currentWeek = currentDate.fetchWeek()
+                
+                if let firstDate = currentWeek.first?.date {
+                    weakSlider.append(firstDate.createPreviousWeek())
                 }
                 
-                CurrendarView()
+                weakSlider.append(currentWeek)
                 
-                Spacer()
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("カラダ記録")
-            .onAppear {
-                if weakSlider.isEmpty {
-                    let currentWeek = currentDate.fetchWeek()
-                    
-                    if let firstDate = currentWeek.first?.date {
-                        weakSlider.append(firstDate.createPreviousWeek())
-                    }
-                    
-                    weakSlider.append(currentWeek)
-                    
-                    if let lastDate = currentWeek.last?.date {
-                        weakSlider.append(lastDate.createNextWeek())
-                    }
+                if let lastDate = currentWeek.last?.date {
+                    weakSlider.append(lastDate.createNextWeek())
                 }
             }
         }
